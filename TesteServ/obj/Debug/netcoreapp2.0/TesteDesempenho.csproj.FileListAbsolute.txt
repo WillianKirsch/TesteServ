@@ -1,0 +1,11 @@
+D:\TFS2017\TesteDesempenho\TesteDesempenho\bin\Debug\netcoreapp2.0\TesteDesempenho.deps.json
+D:\TFS2017\TesteDesempenho\TesteDesempenho\bin\Debug\netcoreapp2.0\TesteDesempenho.runtimeconfig.json
+D:\TFS2017\TesteDesempenho\TesteDesempenho\bin\Debug\netcoreapp2.0\TesteDesempenho.runtimeconfig.dev.json
+D:\TFS2017\TesteDesempenho\TesteDesempenho\bin\Debug\netcoreapp2.0\TesteDesempenho.dll
+D:\TFS2017\TesteDesempenho\TesteDesempenho\bin\Debug\netcoreapp2.0\TesteDesempenho.pdb
+D:\TFS2017\TesteDesempenho\TesteDesempenho\obj\Debug\netcoreapp2.0\TesteDesempenho.csprojResolveAssemblyReference.cache
+D:\TFS2017\TesteDesempenho\TesteDesempenho\obj\Debug\netcoreapp2.0\TesteDesempenho.csproj.CoreCompileInputs.cache
+D:\TFS2017\TesteDesempenho\TesteDesempenho\obj\Debug\netcoreapp2.0\TesteDesempenho.AssemblyInfoInputs.cache
+D:\TFS2017\TesteDesempenho\TesteDesempenho\obj\Debug\netcoreapp2.0\TesteDesempenho.AssemblyInfo.cs
+D:\TFS2017\TesteDesempenho\TesteDesempenho\obj\Debug\netcoreapp2.0\TesteDesempenho.dll
+D:\TFS2017\TesteDesempenho\TesteDesempenho\obj\Debug\netcoreapp2.0\TesteDesempenho.pdb

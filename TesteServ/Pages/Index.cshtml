@@ -1,0 +1,61 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Início";
+}
+<h2>Requisição</h2>
+
+@*@if (!ModelState.IsValid)
+    {
+        <div class="alert alert-danger" role="alert" asp-validation-summary="All"></div>
+    }*@
+
+<div class="loader" style="display:none">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="conteudo" style="display:block">
+
+    @if (Model.Requisicao.TempoDeRespostaEmMS > 0)
+    {
+        <div class="alert alert-success" role="alert">
+            <h3>Tempo de total da execução</h3>
+            Em milissegundo : @Model.Requisicao.TempoTotalEmMS
+            <br />
+            Em segundo: @Convert.ToDouble(Model.Requisicao.TempoTotalEmMS / 1000)
+            <br /><br />
+
+            <h3>Tempo total de resposta</h3>
+            Em milissegundo : @Model.Requisicao.TempoDeRespostaEmMS
+            <br />
+            Em segundo: @Convert.ToDouble(Model.Requisicao.TempoDeRespostaEmMS / 1000)
+        </div>
+    }
+     
+    <form method="POST">
+
+        <div class="form-group">
+            <label for="url">URL</label>
+            <div>
+                <input type="text" class="form-control" asp-for="Requisicao.Url" placeholder="Ex: https://httpbin.org/ip">
+                <span asp-validation-for="Requisicao.Url" style="color:red"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="qtdRequisicoes">Quantidade de requisições</label>
+            <input type="number" class="form-control" id="url" placeholder="Ex: 500" asp-for="Requisicao.QuantidadeRequisicoes">
+            <small class="form-text text-muted">Quantidade de requisições que serão simulados.</small>
+            <span asp-validation-for="Requisicao.QuantidadeRequisicoes" style="color:red"></span>
+        </div>
+
+
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="chkAssincrono" asp-for="Requisicao.Assincrono">
+            <label class="form-check-label" for="chkAssincrono">Assíncrono</label>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="exibirLoader()">Enviar</button>
+    </form>
+</div>

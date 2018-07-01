@@ -9,7 +9,7 @@ namespace TesteServ.Model
         [Required(ErrorMessage = "O campo \"URL\" é obrigatório.")]
         public string Url { get; set; }
 
-        [Range(1, 1000, ErrorMessage = "A \"Quantidade de requisições\" deve ser entre {1} e {2}.")]
+        [Range(1, 9999999999999, ErrorMessage = "A \"Quantidade de requisições\" deve ser entre {1} e {2}.")]
         [Required(ErrorMessage = "O campo \"Quantidade de requisições\" é obrigatório.")]
         public int QuantidadeRequisicoes { get; set; }
 

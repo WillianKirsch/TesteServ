@@ -16,24 +16,27 @@ namespace TesteServ.Pages
         [BindProperty]
         public Requisicao Requisicao { get; set; }
 
-        public List<Thread> threadsInstanciadas = new List<Thread>();
+        private List<Thread> _threadsInstanciadas = new List<Thread>();
+        private string dataInicioRequisicaoEmTicks;
 
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
                 return Page();
 
+            dataInicioRequisicaoEmTicks = DateTime.Now.Ticks.ToString();
+
             var stopwatch = new Stopwatch();
             stopwatch.Start();
 
             for (int i = 1; i <= Requisicao.QuantidadeRequisicoes; i++)
             {
-                if (!Requisicao.Assincrono)
+                if (Requisicao.Assincrono)
                 {
                     ThreadStart ts = new ThreadStart(SomarTempo);
                     Thread thread = new Thread(ts);
                     thread.IsBackground = true;
-                    threadsInstanciadas.Add(thread);
+                    _threadsInstanciadas.Add(thread);
                     //thread.Start();
                 }
                 else
@@ -41,10 +44,10 @@ namespace TesteServ.Pages
 
             }
 
-            foreach (Thread curThread in threadsInstanciadas)
+            foreach (Thread curThread in _threadsInstanciadas)
                 curThread.Start();
 
-            foreach (Thread curThread in threadsInstanciadas)
+            foreach (Thread curThread in _threadsInstanciadas)
                 curThread.Join();
 
 
@@ -84,11 +87,11 @@ namespace TesteServ.Pages
 
         private void SalvarResultado(string result)
         {
-            string folder = String.Concat(@"Resultados", DateTime.Now.ToString("dd MM yyyy HH mm"));
+            string folder = String.Concat(dataInicioRequisicaoEmTicks, " Resultados ", DateTime.Now.ToString("yyyy MM dd MM HH mm"));
             if (!Directory.Exists(folder))
                 Directory.CreateDirectory(folder);
 
-            FileStream fs = new FileStream(String.Concat(folder, "/Resultado", DateTime.Now.Ticks, ".txt"),
+            FileStream fs = new FileStream(String.Concat(folder, "/Resultado ", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId.ToString(), ".txt"),
                 FileMode.Append);
             StreamWriter sw = new StreamWriter(fs);
             sw.WriteLine(result);

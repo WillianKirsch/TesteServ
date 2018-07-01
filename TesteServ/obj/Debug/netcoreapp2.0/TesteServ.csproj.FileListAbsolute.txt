@@ -20,3 +20,14 @@ C:\Users\Willian\Desktop\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.A
 C:\Users\Willian\Desktop\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.AssemblyInfo.cs
 C:\Users\Willian\Desktop\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.dll
 C:\Users\Willian\Desktop\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.pdb
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\bin\Debug\netcoreapp2.0\TesteServ.deps.json
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\bin\Debug\netcoreapp2.0\TesteServ.runtimeconfig.json
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\bin\Debug\netcoreapp2.0\TesteServ.runtimeconfig.dev.json
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\bin\Debug\netcoreapp2.0\TesteServ.dll
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\bin\Debug\netcoreapp2.0\TesteServ.pdb
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.csprojAssemblyReference.cache
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.csproj.CoreCompileInputs.cache
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.AssemblyInfoInputs.cache
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.AssemblyInfo.cs
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.dll
+C:\Users\FlashThink\GIT\TesteServ\TesteServ\obj\Debug\netcoreapp2.0\TesteServ.pdb
